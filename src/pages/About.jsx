@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Contributors from '../components/Contributors';
 
 const SCORING_WEIGHTS = [
   { field: 'Stars', weight: '× 2', note: 'Capped at 2,000 to prevent outlier dominance' },
@@ -104,6 +105,11 @@ export default function About() {
           <p className="font-mono text-sm text-outline max-w-xl uppercase tracking-widest">
             System documentation for the Pakistani developer tracking infrastructure.
           </p>
+        </div>
+
+        {/* Owner & Contributors */}
+        <div className="mb-12">
+          <Contributors />
         </div>
 
         {/* Intro Card */}
